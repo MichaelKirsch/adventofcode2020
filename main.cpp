@@ -2,6 +2,7 @@
 #include <vector>
 #include <algorithm>
 #include <fstream>
+#include "day2.h"
 
 void day1_a() {
     //find the numbers that add to 2020 and then multiply them
@@ -76,20 +77,10 @@ void day1_b() {
     }
 }
 
-void day2(){
-    std::ifstream file("inputs/day2_input.txt");
-    if (file.is_open()) {
-        std::string line;
-        while (std::getline(file, line)) {
-            printf("%s", line.c_str());
-        }
-        file.close();
-    }
-}
 
 
 int main() {
     day1_a(); //day1
     day1_b(); //day1
-    day2();
+    day2 d;
 }
